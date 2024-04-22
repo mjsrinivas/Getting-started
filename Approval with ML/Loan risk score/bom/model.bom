@@ -1,0 +1,97 @@
+
+package _084740706.banking.approval_with_ml.loanriskscore;
+
+
+class Error
+        property ads.typeId "2"
+        #de.generated
+{
+    string code
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "code";
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message";
+    Error(string code, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Error()
+                #dataio.default;
+}
+
+class Input
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonPropertyOrder "{creditScore,income,loanAmount,monthDuration,rate,yearlyReimbursement}"
+        #de.generated
+{
+    double creditscore
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "creditScore";
+    double income
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "income";
+    double loanamount
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "loanAmount";
+    double monthduration
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "monthDuration";
+    double rate
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "rate";
+    double yearlyreimbursement
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "yearlyReimbursement";
+    Input(double creditscore, double income, double loanamount, double monthduration, double rate, double yearlyreimbursement)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Input()
+                #dataio.default;
+}
+
+class Output
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonIgnoreProperties {
+            ignoreUnknown "true"
+        }
+        #de.generated
+{
+    _084740706.banking.approval_with_ml.loanriskscore.Error error
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "error";
+    java.lang.Double predictedPaymentdefault
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "predicted_paymentDefault";
+    java.lang.Double probability0
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "probability_0";
+    java.lang.Double probability1
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "probability_1";
+    Output(java.lang.Double predictedPaymentdefault, java.lang.Double probability0, java.lang.Double probability1)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Output()
+                #dataio.default;
+    boolean inError()
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                };
+    static Output run(_084740706.banking.approval_with_ml.loanriskscore.Input input)
+                #pureFunction;
+    static Output run(com.ibm.decision.run.RunContext runContext, _084740706.banking.approval_with_ml.loanriskscore.Input input)
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "20cd1c8d-07bd-44ad-9be2-c85fd9c2cc93"
+                }
+                #pureFunction;
+}
+

@@ -1,0 +1,57 @@
+
+# _084740706.banking.approval_with_ml.loanriskscore.Error
+_084740706.banking.approval_with_ml.loanriskscore.Error#concept.label = Output error
+_084740706.banking.approval_with_ml.loanriskscore.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = et nytt {Output error} hvor {0, code} {1, message} 
+_084740706.banking.approval_with_ml.loanriskscore.Error.code#phrase.action = sett coden på {this} til {code}
+_084740706.banking.approval_with_ml.loanriskscore.Error.code#phrase.navigation = {code} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Error.message#phrase.action = sett messagen på {this} til {message}
+_084740706.banking.approval_with_ml.loanriskscore.Error.message#phrase.navigation = {message} på {this}
+
+# _084740706.banking.approval_with_ml.loanriskscore.Input
+_084740706.banking.approval_with_ml.loanriskscore.Input#concept.label = ML model input
+_084740706.banking.approval_with_ml.loanriskscore.Input.Input(double,double,double,double,double,double)#phrase.navigation = et nytt {ML model input} hvor {0, creditscore} {1, income} {2, loanamount} {3, monthduration} {4, rate} {5, yearlyreimbursement} 
+_084740706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.action = sett creditscoren på {this} til {creditscore}
+_084740706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.addition_setter = legg {creditscore} til creditscoren på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.navigation = {creditscore} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.creditscore#phrase.subtraction_setter = trekk {creditscore} fra creditscoren på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.income#phrase.action = sett incomen på {this} til {income}
+_084740706.banking.approval_with_ml.loanriskscore.Input.income#phrase.addition_setter = legg {income} til incomen på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.income#phrase.navigation = {income} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.income#phrase.subtraction_setter = trekk {income} fra incomen på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.action = sett loanamounten på {this} til {loanamount}
+_084740706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.addition_setter = legg {loanamount} til loanamounten på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.navigation = {loanamount} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.loanamount#phrase.subtraction_setter = trekk {loanamount} fra loanamounten på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.action = sett monthdurationen på {this} til {monthduration}
+_084740706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.addition_setter = legg {monthduration} til monthdurationen på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.navigation = {monthduration} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.monthduration#phrase.subtraction_setter = trekk {monthduration} fra monthdurationen på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.action = sett raten på {this} til {rate}
+_084740706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.addition_setter = legg {rate} til raten på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.navigation = {rate} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.rate#phrase.subtraction_setter = trekk {rate} fra raten på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.action = sett yearlyreimbursementen på {this} til {yearlyreimbursement}
+_084740706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.addition_setter = legg {yearlyreimbursement} til yearlyreimbursementen på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.navigation = {yearlyreimbursement} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Input.yearlyreimbursement#phrase.subtraction_setter = trekk {yearlyreimbursement} fra yearlyreimbursementen på {this}
+
+# _084740706.banking.approval_with_ml.loanriskscore.Output
+_084740706.banking.approval_with_ml.loanriskscore.Output#concept.label = ML model output
+_084740706.banking.approval_with_ml.loanriskscore.Output.Output(java.lang.Double,java.lang.Double,java.lang.Double)#phrase.navigation = et nytt {ML model output} hvor {0, predicted paymentdefault} {1, probability0} {2, probability1} 
+_084740706.banking.approval_with_ml.loanriskscore.Output.error#phrase.action = sett erroren på {this} til {error}
+_084740706.banking.approval_with_ml.loanriskscore.Output.error#phrase.clearer = fjern erroren på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.error#phrase.navigation = {error} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.inError()#phrase.navigation = {this} er in error
+_084740706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.action = sett predicted paymentdefaulten på {this} til {predicted paymentdefault}
+_084740706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.addition_setter = legg {predicted paymentdefault} til predicted paymentdefaulten på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.navigation = {predicted paymentdefault} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.predictedPaymentdefault#phrase.subtraction_setter = trekk {predicted paymentdefault} fra predicted paymentdefaulten på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.action = sett probability0en på {this} til {probability0}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.addition_setter = legg {probability0} til probability0en på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.navigation = {probability0} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability0#phrase.subtraction_setter = trekk {probability0} fra probability0en på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.action = sett probability1en på {this} til {probability1}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.addition_setter = legg {probability1} til probability1en på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.navigation = {probability1} på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.probability1#phrase.subtraction_setter = trekk {probability1} fra probability1en på {this}
+_084740706.banking.approval_with_ml.loanriskscore.Output.run(_084740706.banking.approval_with_ml.loanriskscore.Input)#phrase.navigation = predict({0})
